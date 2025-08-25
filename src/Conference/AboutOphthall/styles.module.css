@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans[wght].ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('/fonts/anton.ttf');
+}
+
+.container{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+      font-family: "Plus Jakarta Sans";
+}
+
+.title{
+    font-family: 'Anton';
+    font-size: 60px;
+}
+.aboutContent{
+    text-align: center;
+    width:85%;
+}
+
+.aboutCards{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px 22px;
+    width: 250px;
+    text-align: center;
+    min-height: 250px;
+}
+.cardImage{
+    width: 70px;
+    height: 70px;
+}
+
+.cardTag{
+    width: fit-content;
+    margin-bottom: 0 !important;
+    min-width: 65px;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: #00a0e3;
+    color: white;
+}
+.description{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content{
+  font-size: 24px;
+}
+@media (max-width: 992px) {
+  .aboutContent {
+    width: 90%;
+  }
+
+  .aboutCards {
+    gap: 30px;
+    flex-wrap: wrap; 
+  }
+
+  .cardContent {
+    padding: 15px 60px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .cardImage {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutCards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cardContent {
+    width: 100%;
+
+  }
+
+  .title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .aboutContent {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .cardImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}

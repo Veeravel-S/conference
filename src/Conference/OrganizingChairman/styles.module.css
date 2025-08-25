@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans[wght].ttf");
+}
+@font-face {
+  font-family: "Anton";
+  src: url("/fonts/anton.ttf");
+}
+
+.container {
+  margin-top: 90px;
+  text-align: center;
+    font-family: "Plus Jakarta Sans";;
+  width: 100%;
+}
+.title {
+  font-family: "Anton";
+  font-size: 60px;
+}
+.containerContent {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  gap: 80px;
+}
+.welcomeCards {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* background-color: #f4fcff; */
+  padding: 35px 40px;
+  border-radius: 31px;
+  /* border:1px solid #3fb7ea;  */
+}
+.welcomeCards>p{
+      font-size: 22px;
+}
+.profile{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.profile h5{
+    margin-bottom: 3px;
+}
+.profile p{
+    margin-bottom: 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin: 15px 0;
+  width: 80%;
+  background: linear-gradient(90deg, #ebebeb 0%, #ffffff 100%);
+  padding: 20px;
+}
+.content p {
+  margin-bottom: 0 !important;
+  font-size: 18px;
+  text-align: start;
+}
+.contentimg {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+.keynote{
+    width: 40%;
+    text-align: start;
+}
+.keynote h4{
+    font-weight: bold;
+    font-size: 25px;
+}
+@media (max-width:992px){
+      .content{
+    text-align: start;
+    gap: 10px;
+    width: 95%;
+    margin: 10px 0;
+  }
+  .content p {
+  margin-bottom: 0 !important;
+  font-size: 16px;
+}
+.containerContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.welcomeCards{
+    width: 80% !important;
+}
+.keynote{
+    width: 80%;
+    text-align: start;
+}
+.keynote h4{
+    margin-bottom: 20px;
+}
+}
+
+
+@media (max-width:768px){
+    .title{
+        font-size: 30px;
+    }
+    .welcomeCards{
+    width: 95% !important;
+}
+.keynote{
+    width: 95%;
+    text-align: start;
+}
+}

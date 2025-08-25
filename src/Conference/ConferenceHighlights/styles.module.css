@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/PlusJakartaSans[wght].ttf");
+}
+@font-face {
+  font-family: "Anton";
+  src: url("/fonts/anton.ttf");
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 90px;
+}
+.title{
+    font-size: 60px;
+     font-family: "Anton";
+}
+
+.containerCards{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card{
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  border-radius: 31px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px 28px;
+}
+
+.card img{
+  width: 50px;
+  height: 50px;
+}
+
+.cardTitle{
+  margin-top: 10px;
+  font-size:20px;
+  font-weight: 600;
+}
+.cardContent{
+    margin-top: 5px;
+  font-size: 16px;
+}
+
+
+@media (max-width:992px){
+  .title{
+    font-size: 30px;
+  }
+  .containerCards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+.card{
+  width:45%;
+}
+}
+
+@media (max-width:576px){
+  .card{
+  width:90%;
+}
+}
