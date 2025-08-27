@@ -61,7 +61,7 @@ const OrganizingChairman = ({ data }) => {
                         viewport={{ amount: 0.2, once: false }}>
                         {data?.keyNotes?.keyNotesList?.map((item, index) => (
                             <motion.div key={index} variants={itemVariants} className={styles.content}>
-                                <img src="assets/Skyrocket/success.png" className={styles.contentimg} alt="" />
+                                <img src="assets/SkyRocket/success.png" className={styles.contentimg} alt="" />
                                 <p>{item}</p>
                             </motion.div>
                         ))}

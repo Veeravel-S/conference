@@ -251,7 +251,7 @@ export const conferenceData = {
           "Connect with fellow ophthalmologists, build partnerships, and expand your professional network.",
       },
        {
-        img: "assets/Conference/expo2.JPG",
+        img: "assets/Conference/expo2.jpg",
         title: "India Ophthalmology Expo",
         description:
           "Partner event showcasing the latest technology, equipment, and innovations in eye care.",
