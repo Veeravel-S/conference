@@ -1,4 +1,4 @@
-"use client";
+
 import Title from "@/Title";
 import styles from "./styles.module.css";
 import { motion } from "framer-motion";
