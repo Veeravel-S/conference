@@ -99,6 +99,10 @@ a {
   box-shadow: none !important
 }
 
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
 @media (width < 1200px) {
   .rb {
     margin: 20px 0px;

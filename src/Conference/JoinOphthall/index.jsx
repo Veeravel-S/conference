@@ -1,7 +1,48 @@
 import React from 'react'
 import styles from './styles.module.css'
+// import { useAuth } from '@/redux/selectors/auth/authSelector';
 
 const JoinOphthall = ({ data }) => {
+    // const { token } = useAuth();
+    // const Formik = useFormik({
+    //     initialValues: {
+    //         your_name: "",
+    //         hospital_name: "",
+    //         mobile_number: "",
+    //         email: ""
+    //     },
+    //     validationSchema: Yup.object().shape({
+    //         new_password: Yup.string()
+    //             .required("Password required")
+    //             .matches(
+    //                 /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+    //                 "Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character"
+    //             ),
+
+    //         confirm_password: Yup.string()
+    //             .required("confirm password required")
+    //             .oneOf([Yup.ref("new_password"), null], "Passwords must match"),
+    //     }),
+
+    //     onSubmit: (value) => {
+    //         console.log("knk", value);
+    //         const sendData = {
+    //             your_name: localStorage.getItem("your_name"),
+    //             hospital_name: localStorage.getItem("hospital_name"),
+    //             password: value?.new_password,
+    //         };
+
+    //         useResetPasswordMutation(
+    //             { values: sendData },
+    //             {
+    //                 onSuccess: () => {
+    //                     Router.replace("/login");
+    //                 },
+    //             }
+    //         );
+    //     },
+    // });
+
     return (
         <section className={`${styles.container} container-fluid`}>
             <div className={`${styles.contentContainer} container`}>

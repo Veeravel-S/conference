@@ -7,234 +7,290 @@
   src: url("/fonts/anton.ttf");
 }
 
-.container{
-    margin-top: 90px;
-    text-align: center;
+.mainContainer {
+  margin-top: 90px;
+  --bs-gutter-x: 0rem;
 }
-
-.title{
-     font-family: "Anton";
-    font-size: 60px;
-    font-weight: bold;
+.container {  
+  margin-top: 50px;
+  padding: 20px;
+    width: 100%;   
+    max-width: 100%;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
 }
-
+.iframeTag{
+    width:550px;
+    height:450px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.bgImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+.title {
+  font-family: "Anton";
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+.contentContainer{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    margin-top: 40px;
+}
 .ctdetail {
-    font-family: 'Plus Jakarta Sans';
-    text-align: start;
-    margin: 20px 0px;
-    width: 600px;
-    background-color: rgb(0 160 227);
-    padding: 30px 26px 35px;
-    color: #fff;
-    min-height: 250px;
-    height: auto;
-    border-radius: 20px;
+  font-family: "Plus Jakarta Sans";
+  text-align: start;
+  margin:0px;
+  width: 700px;
+  /* background-color: rgb(0 160 227); */
+  background-color: transparent;
+  padding: 30px 40px 35px;
+  color: #fff;
+  min-height: 250px;
+  height: auto;
+  border-radius: 20px;
+  background-size: cover;
 }
 
 .ctdetail h3 {
-    font-weight: 700;
-    font-size: 30px;
+  font-weight: 700;
+  font-size: 30px;
 }
 
-.description{
-    margin-top: 40px;
+.description {
+  margin-top: 40px;
 }
 
 .ctdetail p {
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .ctdetail span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .ctmap {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .number {
-    text-align: center;
+  text-align: center;
 }
-.tagContainer{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    justify-content: start;
-    width: 100%;
-    margin-top: 25px;
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin-top: 25px;
 }
-.tag{
-    min-width: 48%;
-    background-color: #fff;
-    color: gray;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 8px 9px;
+.tag {
+  min-width: 35%;
+  background-color: #fff;
+  color: gray;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: 16px 22px;
 }
-.tag p{
-    font-size: 14px;
-    margin-bottom: 0;
+.tag p {
+  font-size: 14px;
+  margin-bottom: 0;
 }
-.image
-{
-    width: 27px;
-    height: 27px;
+.image {
+  width: 25px;
+  height: 25px;
 }
 .number h5 {
-    font-size: 25px;
-    font-weight: 700;
-    cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .number a {
-    font-weight: 400;
-    font-size: 18px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 .contactnum {
-    background-color: #002f42;
-    color: #fff;
-    padding: 30px;
-    border-radius: 25px;
+  background-color: #002f42;
+  color: #fff;
+  padding: 30px;
+  border-radius: 25px;
 }
 
 .ContactDetail {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .contactnum {
-    margin: 80px 0px;
+  margin: 80px 0px;
 }
-
 
 @media (width < 1400px) {
+  .ctdetail h3 {
+    font-size: 26px;
+  }
 
-
-    .ctdetail h3 {
-        font-size: 26px;
-
-    }
-
-    .ctdetail {
-        font-size: 18px;
-    }
-
+  .ctdetail {
+    font-size: 18px;
+  }
 }
-
-
 
 @media (width < 1200px) {
+  .number h5 {
+    font-size: 20px;
+  }
 
-    .number h5 {
-        font-size: 20px;
-    }
+  .ctdetail {
+    width: 400px;
+  }
 
-    .ctdetail {
-        width: 400px;
-    }
+  .ctdetail h3 {
+    font-size: 24px;
+  }
 
-    .ctdetail h3 {
-        font-size: 24px;
-    }
-
-    .ctdetail p {
-        font-size: 18px;
-    }
-
+  .ctdetail p {
+    font-size: 18px;
+  }
 }
-
 
 @media (width < 992px) {
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    .ContactDetail {
-        margin-top: 50px;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .ContactDetail {
+    margin-top: 50px;
+  }
 
-    .contactnum {
-        margin: 50px 0px;
-    }
+  .contactnum {
+    margin: 50px 0px;
+  }
 
-    .number h5  , .ctdetail p{
-        font-size: 16px;
-    }
+  .number h5,
+  .ctdetail p {
+    font-size: 16px;
+  }
 
-    .number a {
-        font-size: 14px;
-    }
-    .ctdetail{
-        width: 100%;
-    }
+  .number a {
+    font-size: 14px;
+  }
+  .ctdetail {
+    width: 100%;
+  }
 
-    .ctdetail h3 {
-        font-size: 22px;
-    }
-    .tag{
-        padding: 8px 8px;
-    }
-    .tag p{
-        font-size: 12px;
-    }
-    .image{
-        width: 25px;
-        height: 25px;
-    }
-
+  .ctdetail h3 {
+    font-size: 22px;
+  }
+  .tag {
+    padding: 8px 8px;
+  }
+  .tag p {
+    font-size: 12px;
+  }
+  .image {
+    width: 25px;
+    height: 25px;
+  }
+  .ctmap{
+    justify-content: start;
+    margin-left: 40px;
+  }
 }
 
-
 @media (width < 768px) {
+  .ctdetail {
+    height: auto;
+  }
+  .contactnum {
+    padding: 30px 10px;
+  }
 
-    .ctdetail{
-        height: auto;
-    }
-    .contactnum{
-        padding: 30px 10px;
-    }
-
-     .tag{
-        padding: 8px 8px;
-    }
-    .tag p{
-        font-size: 12px;
-    }
-    .image{
-        width: 25px;
-        height: 25px;
-    }
+  .tag {
+    padding: 8px 8px;
+  }
+  .tag p {
+    font-size: 12px;
+  }
+  .image {
+    width: 25px;
+    height: 25px;
+  }
+    .ctmap{
+        width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .contentContainer{
+    margin-top: 0px;
+  }
+  .iframeTag{
+    width:90%;
+    height:450px;
+}
 }
 
 @media (width < 576px) {
+    .ctdetail{
+        padding:20px 20px 20px;
+    }
+  .ctdetail p {
+    font-size: 15px;
+  }
+  .mapContainer{
+    display: flex;
+    justify-content: center;
+  }
+  .ctmap{
+    width: 95%;
+  }
 
-    .ctdetail p{
-        font-size: 15px;
-    }
-    .number h5{
-        font-size: 20px;
-    }
+  .number h5 {
+    font-size: 20px;
+  }
 
-    .number a{
-        font-size: 18px;
-    }
-     .tag{
-        padding: 8px 8px;
-    }
-    .tag p{
-        font-size: 12px;
-    }
-    .image{
-        width: 25px;
-        height: 25px;
-    }
+  .number a {
+    font-size: 18px;
+  }
+  .tag {
+    padding: 8px 8px;
+  }
+  .tag p {
+    font-size: 12px;
+  }
+  .image {
+    width: 25px;
+    height: 25px;
+  }
+  .iframeTag{
+    width:100%;
+    height:400px;
+}
 }

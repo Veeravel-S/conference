@@ -20,26 +20,80 @@
 .containerContent {
   display: flex;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
   margin-top: 60px;
-  gap: 80px;
+  gap: 70px;
 }
 .welcomeCards {
-  width: 40%;
+  width: 55%;
+  /* height: 400px; */
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  border-radius: 40px;
+  position: relative;
+  /* border:1px solid #3fb7ea;  */
+}
+.cardImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  z-index:0;
+}
+.overlay{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 40px;
+}
+.quotationImage{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  bottom: 40px;
+  right:40px;
+  z-index: 3;
+}
+.welcomeCards .profile,.welcomeCards p{
+  z-index: 3;
+}
+.cardContent{
+    width: 64%;
+  height: 320px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   text-align: start;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  /* background-color: #f4fcff; */
-  padding: 35px 40px;
-  border-radius: 31px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  background-color: #00a0e3;
+  padding: 15px 35px;
+  color: #fff;
+  border-radius: 40px;
+  top: 90px;
+  left: 290px;
+  z-index: 4;
+  position: absolute;
   /* border:1px solid #3fb7ea;  */
 }
-.welcomeCards>p{
-      font-size: 22px;
+.cardImageContainer{
+  position: relative;
+  width: 70%;
+  height: 430px;
+  margin-left: 30px;
+}
+.cardContent{
+  font-size: 14px;
 }
 .profile{
     display: flex;
@@ -55,9 +109,11 @@
 }
 .profile h5{
     margin-bottom: 3px;
+    font-weight: bold;
 }
 .profile p{
     margin-bottom: 0;
+    font-weight: 500;
 }
 
 .content {
@@ -66,7 +122,7 @@
   justify-content: start;
   gap: 10px;
   margin: 15px 0;
-  width: 80%;
+  width: 82%;
   background: linear-gradient(90deg, #ebebeb 0%, #ffffff 100%);
   padding: 20px;
 }
@@ -107,6 +163,10 @@
     align-items: center;
     gap: 50px;
 }
+.cardImageContainer{
+  margin-left: 0px;
+  width: 90%;
+}
 .welcomeCards{
     width: 80% !important;
 }
@@ -125,10 +185,48 @@
         font-size: 30px;
     }
     .welcomeCards{
-    width: 95% !important;
+    width: 100% !important;
 }
 .keynote{
+  margin-top: 80px;
     width: 95%;
     text-align: start;
+}
+.quotationImage{
+  bottom: 50px;
+  right:40px;
+}
+.cardContent{
+    width: 76%;
+  height: 320px;
+  top:43%;
+  left: 20%;
+}
+.cardImageContainer{
+  width: 80%;
+  height: 380px;
+  margin-left: 10px;
+}
+}
+@media(max-width:576px){
+  .cardContent{
+    width: 90%;
+  height: 290px;
+  top:45%;
+  left: 10%;
+}
+.cardImageContainer{
+  width: 90%;
+  height: 380px;
+  margin-left: 10px;
+}
+.keynote{
+  margin-top: 100px;
+}
+}
+@media (max-width:420px){
+  .quotationImage{
+  bottom: 40px;
+  right:15px;
 }
 }

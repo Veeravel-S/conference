@@ -92,6 +92,9 @@
   text-align: center;
   margin-bottom: 10px !important;
 }
+.buttonGroup{
+  margin-top: 30px;
+}
 .button{
   padding: 33px 66px;
   border-radius: 50px;
@@ -100,7 +103,7 @@
 @media (max-width: 992px) {
   .container {
     width: 100% !important;
-    margin: 10px auto 50px;
+    margin: 80px auto 50px;
     padding-top: 20px;
     height: 500px;
   }
@@ -155,8 +158,9 @@
 @media (max-width: 768px) {
   .container {
     width: 100% !important;
-    margin: 10px auto 50px;
+    margin: 80px auto 50px;
     padding-top: 20px;
+    height: 530px;
   }
   .contentContainer {
     width: 100% !important;
@@ -205,4 +209,12 @@
 .buttonGroup{
     flex-direction: column;
 }
+}
+
+
+@media (max-width:420px){
+    .container {
+
+    height: 550px;
+  }
 }
