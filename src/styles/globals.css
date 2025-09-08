@@ -17,11 +17,14 @@ html,
   --text-gray: #3c3c43;
 }
 
+html{
+  overflow-x: hidden !important; 
+}
 html,
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
   width: 100%;
   font-family: 'Plus Jakarta Sans' !important;
 
@@ -125,6 +128,15 @@ a {
 
   .mbicon {
     width: 25px;
+  }
+}
+
+@media (max-width:768px){
+  .swiper{
+    height: 260px !important;
+  }
+  div.swiper-slide{
+    height: 85px !important;
   }
 }
 

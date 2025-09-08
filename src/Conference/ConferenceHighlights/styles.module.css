@@ -165,9 +165,9 @@
   gap: 10px;
   border-radius: 10px;
   padding: 15px;
-  width: 200px;
+  width: 250px;
   text-align: start;
-  min-height: 260px;
+  min-height: 350px;
     position:relative;
   }
 
@@ -183,7 +183,19 @@
   }
 
   .description {
+        font-size: 20px
+  }
+}
+
+@media (max-width:576px){
+    .cardContent {
+    width: 95%;
+     min-height: 500px;
     font-size: 14px;
+  }
+
+  .description {
+       font-size: 20px;
   }
 }
 

@@ -10,7 +10,7 @@
 .container {
   /* margin-top: 70px; */
   /* background-color: #00a0e3; */
-background: linear-gradient(20deg, #00a0e3, #00b8ff, #66e0ff);
+background-color:#00a0e3;
   color: #fff;
   padding: 80px 0;
   display: flex;
@@ -104,6 +104,49 @@ background: linear-gradient(20deg, #00a0e3, #00b8ff, #66e0ff);
   width: 55%;
   text-align: start;
 }
+
+@media (max-width: 1400px) {
+  .title {
+    font-size: 60px;
+    width: 40%;
+  }
+
+  .aboutContent {
+    width: 90%;
+    gap: 70px;
+  }
+
+  .contentContainer {
+    width: 60%;
+  }
+
+  .cardContent {
+    width: 200px;
+    min-height: 270px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 55px;
+    width: 50%;
+  }
+
+  .aboutContent {
+    width: 90%;
+    gap: 60px;
+  }
+
+  .contentContainer {
+    width: 65%;
+  }
+
+  .cardContent {
+    width: 200px;
+    min-height: 260px;
+  }
+}
+
 @media (max-width: 992px) {
   .aboutContent {
     width: 90%;
@@ -156,9 +199,9 @@ background: linear-gradient(20deg, #00a0e3, #00b8ff, #66e0ff);
   gap: 10px;
   border-radius: 10px;
   padding: 15px;
-  width: 200px;
+  width: 250px;
   text-align: start;
-  min-height: 260px;
+  min-height: 350px;
     position:relative;
   }
 
@@ -174,6 +217,45 @@ background: linear-gradient(20deg, #00a0e3, #00b8ff, #66e0ff);
   }
 
   .description {
-    font-size: 14px;
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .container {
+    padding: 50px 15px;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+  }
+
+   .aboutCards {
+  flex-wrap: wrap;
+    gap: 40px;
+  }
+  .content{
+    width: 100%;
+  }
+  .cardContent {
+ display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  width: 400px;
+  text-align: start;
+  min-height: 480px;
+    position:relative;
+  }
+
+
+  .description {
+    font-size: 20px;
   }
 }

@@ -23,7 +23,6 @@ const ConferencePage = () => {
       <WhatYouLearn data={conferenceData?.WhatYouLearn} />
       <VenueDetails data={conferenceData?.venueDetails} />
       <OrganizingChairman data={conferenceData?.organizingChairman} />
-      {/* <Accommodations data={conferenceData?.accommodations}  /> */}
       <JoinOphthall data={conferenceData?.joinOphthall} />
     </>
   );

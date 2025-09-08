@@ -44,7 +44,7 @@ const ForWhom = ({data}) => {
                   {data.map((data, i) => (
                     <SwiperSlide>
                       <div
-                        className={`d-flex align-items-center gap-3 my-3 ${styles.forwhomlist}`}
+                        className={`d-flex align-items-center gap-2 gap-md-3 my-3 ${styles.forwhomlist}`}
                       >
                         <div className={styles.fwicon}>
                           <img src={data?.icon} className="img-fluid" />

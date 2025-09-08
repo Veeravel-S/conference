@@ -1,9 +1,6 @@
-import React, { useRef } from 'react';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; // Add this import
-import "slick-carousel/slick/slick-theme.css"; // Add this import
-
+import React from 'react';
 import styles from "./styles.module.css";
+import Slider from 'react-slick';
 
 const AssociatePartner = ({ data }) => {
     var settings = {

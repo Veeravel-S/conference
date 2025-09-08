@@ -69,7 +69,7 @@
 }
 .cardContent{
     width: 64%;
-  height: 320px;
+  /* height: 320px; */
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -83,6 +83,7 @@
   top: 90px;
   left: 290px;
   z-index: 4;
+    font-size: 14px;
   position: absolute;
   /* border:1px solid #3fb7ea;  */
 }
@@ -92,9 +93,7 @@
   height: 430px;
   margin-left: 30px;
 }
-.cardContent{
-  font-size: 14px;
-}
+
 .profile{
     display: flex;
     gap: 10px;
@@ -144,6 +143,63 @@
     font-weight: bold;
     font-size: 25px;
 }
+
+@media (max-width:1400px) {
+  .title {
+    font-size: 55px;
+  }
+  .welcomeCards{
+    width: 55%;
+  }
+  .keynote{
+    width: 45%;
+  }
+  .cardContent {
+    width: 50%;
+    top: 130px;
+    left: 260px;
+    padding: 30px 25px;
+  }
+  .containerContent{
+    gap: 10px;
+  }
+  .cardImageContainer {
+    height: 450px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .cardContent {
+    width: 60%;
+    padding: 25px;
+    left: 230px;
+    top: 120px;
+  }
+.containerContent{
+  gap: 40px;
+}
+  .cardImageContainer {
+    width: 80%;
+    height: 420px;
+  }
+
+  .welcomeCards {
+    width: 70%;
+  }
+
+  .keynote {
+    width: 55%;
+  }
+  .quotationImage{
+    bottom: 10%;
+    right: 7%;
+  }
+}
+
 @media (max-width:992px){
       .content{
     text-align: start;
@@ -156,7 +212,7 @@
   font-size: 16px;
 }
 .containerContent{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,10 +221,10 @@
 }
 .cardImageContainer{
   margin-left: 0px;
-  width: 90%;
+  width: 80%;
 }
 .welcomeCards{
-    width: 80% !important;
+    width: 90% !important;
 }
 .keynote{
     width: 80%;
@@ -177,19 +233,32 @@
 .keynote h4{
     margin-bottom: 20px;
 }
+  .cardContent {
+    width: 70%;
+    left: 300px;
+    top: 100px;
+    padding: 30px;
+  }
 }
 
 
 @media (max-width:768px){
+  .containerContent{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
     .title{
         font-size: 30px;
     }
     .welcomeCards{
+      flex-direction: column;
     width: 100% !important;
 }
 .keynote{
-  margin-top: 80px;
-    width: 95%;
+  margin-top: 40px;
+    width: 100%;
     text-align: start;
 }
 .quotationImage{
@@ -197,36 +266,53 @@
   right:40px;
 }
 .cardContent{
-    width: 76%;
-  height: 320px;
-  top:43%;
-  left: 20%;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  margin-top: 30px;
+  background-color: #00a0e3;
+  padding: 35px;
+  color: #fff;
+  border-radius: 40px;
+  z-index: 4;
+  top: unset;
+  left :unset;
+  font-size: 20px;
+  position: relative !important;
 }
 .cardImageContainer{
-  width: 80%;
-  height: 380px;
-  margin-left: 10px;
+  width: 100%;
+  height: 450px;
 }
 }
 @media(max-width:576px){
   .cardContent{
-    width: 90%;
-  height: 290px;
-  top:45%;
-  left: 10%;
+    width: 100%;
+  height: auto;
+  padding: 25px;
+  font-size: 16px;
 }
 .cardImageContainer{
-  width: 90%;
+  width: 100%;
   height: 380px;
-  margin-left: 10px;
 }
 .keynote{
-  margin-top: 100px;
+  margin-top: 40px;
+}
+  .quotationImage{
+  bottom: 30px;
+  right:40px;
 }
 }
 @media (max-width:420px){
   .quotationImage{
-  bottom: 40px;
-  right:15px;
+  bottom: 30px;
+  right:30px;
+}
+.cardContent{
+  padding: 25px;
 }
 }

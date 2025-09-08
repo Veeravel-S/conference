@@ -100,7 +100,9 @@ background: linear-gradient(135deg, #29c26e, #84ffaf);
 
 
 @media (width < 768px) {
-
+    .title{
+            font-size: 32px;
+    }
     .contactnum{
         padding: 30px 10px;
     }
