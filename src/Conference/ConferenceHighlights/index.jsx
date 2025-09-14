@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from "./styles.module.css"
+import Title from '@/Title'
 const ConferenceHightlights = ({ data }) => {
 
     return (
         <section className={`${styles.container} container-fluid`}>
-            <h4 className={styles.title}>{data?.title}</h4>
+              <Title title={data?.title} />
             <div className={styles.aboutCards}>
                 {data?.conferenceHighlightsList?.map((item, index) => (
                     <div className={styles.cardContent}>

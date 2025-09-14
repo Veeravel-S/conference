@@ -1,11 +1,14 @@
 import React from 'react';
+import Slider from "react-slick";
+
 import styles from "./styles.module.css";
-import Slider from 'react-slick';
 
 const AssociatePartner = ({ data }) => {
+
     var settings = {
         dots: false,
         infinite: true,
+        speed: 1000,
         arrows: false,
         loop: true,
         slidesToShow: 8,

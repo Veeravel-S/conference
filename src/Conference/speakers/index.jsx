@@ -1,5 +1,5 @@
 "use client";
-import Title from "@/Title";
+import Title from '@/Title'
 import styles from "./styles.module.css";
 
 const Speakers = ({ data }) => {

@@ -1,4 +1,4 @@
-
+import Title from '@/Title'
 import styles from "./styles.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -6,13 +6,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Title from "@/Title";
 
 const ForWhom = ({data}) => {
   return (
     <section className={styles.forwhomsec}>
       <div className="container">
-        <Title title={"For Who Attends"} />
+        <Title title={"Who Can Attend"} />
 
         <div className={styles.forwhom}>
           <div className="row">

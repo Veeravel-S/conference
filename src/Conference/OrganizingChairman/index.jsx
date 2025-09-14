@@ -31,7 +31,7 @@ const OrganizingChairman = ({ data }) => {
                     <div>
                         {data?.keyNotes?.keyNotesList?.map((item, index) => (
                             <div key={index} className={styles.content}>
-                                <img src="assets/SkyRocket/success.png" className={styles.contentimg} alt="" />
+                                <img src="assets/Skyrocket/success.png" className={styles.contentimg} alt="" />
                                 <p>{item}</p>
                             </div>
                         ))}

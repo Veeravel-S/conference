@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from "./styles.module.css"
+import Title from '@/Title'
 
 const VenueDetails = ({ data }) => {
     return (
         <section className={`${styles.mainContainer} container-fluid`}>
-            <h4 className={styles.title}>{data?.title}</h4>
+            <Title title={data?.title} />
             <div className={`${styles.container}`}>
                 <img className={styles.bgImage} src="/assets/Conference/cidco.jpg" alt="" />
                 <div className={styles.overlay}></div>

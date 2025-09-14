@@ -2,13 +2,13 @@
 import React from 'react'
 import styles from "./styles.module.css"
 import { motion } from "framer-motion";
-
+import Title from '@/Title'
 
 const WhatYouLearn = ({ data }) => {
 
     return (
         <section className={`${styles.container} container`}>
-            <h4 className={styles.title}>{data?.title}</h4>
+             <Title title={data?.title} />
             <div className={styles.contentContainer}>
                 {
                     data?.contents?.map((item, index) => (
